@@ -13,4 +13,9 @@ public interface UserMapper {
 	 */
 	List<User> selectByAll();
 	
+	/**
+	 * 获取用户
+	 * @return
+	 */
+	
 }
