@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.team502.easycall.common.dao.StatMapper" >
+  <resultMap id="BaseResultMap" type="com.team502.easycall.common.domain.Stat" >
+    <id column="pk_stat_day" property="pkStatDay" jdbcType="INTEGER" />
+    <id column="pk_stat_type" property="pkStatType" jdbcType="INTEGER" />
+    <result column="description" property="description" jdbcType="VARCHAR" />
+  </resultMap>
+  
+</mapper>

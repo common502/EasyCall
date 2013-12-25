@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<!-- 使用Tiles集成的问题：1.每个页面都要在这里做配置。2.修改配置，新增页面等需要重启服务才能生效。 -->
+<tiles-definitions>
+    <definition name="frontend.base.definition"
+        template="/WEB-INF/view/frontend/includes/layout.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="top" value="/WEB-INF/view/frontend/includes/top.jsp" />
+        <put-attribute name="sidebar" value="/WEB-INF/view/frontend/susongyindao/sidebar.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="bottom" value="/WEB-INF/view/frontend/includes/bottom.jsp" />
+    </definition>
+    
+    <!-- 异常信息页 -->
+    <definition name="BusinessExceptionPage" extends="frontend.base.definition">
+        <put-attribute name="title" value="错误信息" />
+        <put-attribute name="body" value="/WEB-INF/view/frontend/BusinessExceptionPage.jsp" />
+    </definition>
+    <definition name="error" extends="frontend.base.definition">
+        <put-attribute name="title" value="错误信息" />
+        <put-attribute name="body" value="/WEB-INF/view/frontend/error.jsp" />
+    </definition>
+
+</tiles-definitions>
