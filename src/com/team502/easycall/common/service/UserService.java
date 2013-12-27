@@ -19,4 +19,18 @@ public class UserService {
 		List<User> userList = new ArrayList<User>();
 		return userList;
 	}
+	
+	/**
+	 * 通过ID查询用户
+	 */
+	public User getUserById(String userId){
+		return null;
+	}
+	
+	/**
+	 * 删除用户
+	 */
+	public void deleteUser(User user){
+		
+	}
 }
