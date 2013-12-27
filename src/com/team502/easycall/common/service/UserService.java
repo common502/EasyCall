@@ -1,5 +1,6 @@
 package com.team502.easycall.common.service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import com.team502.easycall.common.domain.User;
@@ -15,7 +16,7 @@ public class UserService {
 	 * @return
 	 */
 	public List<User> selectByAll(){
-		
-		return null;
+		List<User> userList = new ArrayList<User>();
+		return userList;
 	}
 }
